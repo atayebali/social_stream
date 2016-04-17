@@ -21,12 +21,12 @@ Dev real time endpoint is hard coded at localhost:3000 (will be configurable soo
 - Add a config.yml file to current dir
 
 Sample:
-    > starbucks:    
-    >   services:
-    >       twitter:
-    >         key: XXXX
-    >         secret: XXX  
-    >
+    ```starbucks:    
+       services:
+           twitter:
+             key: XXXX
+             secret: XXX```  
+
 
 
 - Once the correct Config is in its place.  simply run the gem's binary
