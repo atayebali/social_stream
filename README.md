@@ -21,11 +21,11 @@ Dev real time endpoint is hard coded at localhost:3000 (will be configurable soo
 - Add a config.yml file to current dir
 
 Sample:
-    ```starbucks:    
+      starbucks:    
        services:
            twitter:
              key: XXXX
-             secret: XXX```  
+             secret: XXX
 
 
 
