@@ -1,0 +1,16 @@
+#!usr/bin/env ruby
+
+require 'socialkit'
+require 'optparse'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: Socialkit [options]"
+
+  opts.on("-p", "--publish", "Publish data to real time channel") do |v|
+    options[:publish] = v
+  end
+end.parse!
+
+
+Socialkit::Manager.run options
