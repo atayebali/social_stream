@@ -40,21 +40,5 @@ module Socialkit
         @data[cursor.first] = cursor.last
       end
     end
-
-    def set_credentials
-      config = @manager.config_reader.config["pusher"]
-      if !config.nil? && !config.empty?
-        Pusher.app_id = config['app_id']
-        Pusher.key    = config['key']
-        Pusher.secret = config['secret']
-      end
-    end
-
-    def push_content
-      formater = Socialkit::Formats::WordFrequency.new(@data)
-      Pusher.trigger("starbucks",
-                      "cloud_event",
-                      formater.json)
-    end
   end
 end

@@ -22,7 +22,7 @@ Dev real time endpoint is hard coded at localhost:3000 (will be configurable soo
 
 Sample:
       starbucks:    
-       services:
+         services:
            twitter:
              key: XXXX
              secret: XXX
