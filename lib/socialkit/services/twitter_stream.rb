@@ -46,14 +46,6 @@ module Socialkit
                                             }
 
               end
-
-
-
-
-
-
-
-              # @manager.process text
             end
           end
         rescue Interrupt
